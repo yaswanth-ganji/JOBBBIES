@@ -10,11 +10,15 @@ class Header extends React.Component {
   logOut = () => {
     this.setState({ open: true });
   };
-  Home = () => {
+  MainLogout = () => {
     Cookie.remove("JobbyjwtToken");
     const { history } = this.props;
     history.push("/login");
     this.setState({ open: false });
+  };
+  Home = () => {
+    const { history } = this.props;
+    history.push("/");
   };
   render() {
     return (
@@ -43,7 +47,7 @@ class Header extends React.Component {
             message="Are you sure that you want to Logout?"
             isOpen={this.state.open}
             onClose={() => this.setState({ open: false })}
-            onLogOut={this.Home}
+            onLogOut={this.MainLogout}
           />
         </div>
       </>
