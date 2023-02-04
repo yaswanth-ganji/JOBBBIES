@@ -2,16 +2,19 @@ import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import "../styles/Header.css";
 import Cookie from "js-cookie";
-
+import LogoutModel from "./LogoutModel";
 class Header extends React.Component {
+  state = {
+    open: false,
+  };
   logOut = () => {
-    Cookie.remove("JobbyjwtToken");
-    const { history } = this.props;
-    history.replace("/login");
+    this.setState({ open: true });
   };
   Home = () => {
+    Cookie.remove("JobbyjwtToken");
     const { history } = this.props;
-    history.push("/");
+    history.push("/login");
+    this.setState({ open: false });
   };
   render() {
     return (
@@ -34,6 +37,14 @@ class Header extends React.Component {
             </Link>
           </div>
           <button onClick={this.logOut}>Logout</button>
+        </div>
+        <div>
+          <LogoutModel
+            message="Are you sure that you want to Logout?"
+            isOpen={this.state.open}
+            onClose={() => this.setState({ open: false })}
+            onLogOut={this.Home}
+          />
         </div>
       </>
     );

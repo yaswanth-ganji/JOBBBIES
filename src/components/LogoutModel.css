@@ -1,0 +1,70 @@
+/* .EntireLogoutDiv {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: grey;
+  z-index: 9999;
+  overflow-y: hidden;
+}
+.LogoutContent {
+  background-color: white;
+  color: black;
+} */
+
+.modal {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.model2 {
+  background-color: #272727;
+  color: #ffffff;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 45%;
+  font-family: Roboto;
+  opacity: 1;
+}
+.model2 p {
+  margin-bottom: 25px;
+  font-size: larger;
+}
+.btnDiv {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  height: 60px;
+}
+.btnDiv .yes {
+  background-color: #4f46e5;
+  padding: 6px 20px;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.yes:hover {
+  background-color: #6366f1;
+  border: 2px solid #4f46e5;
+}
+
+.btnDiv .no {
+  padding: 6px 20px;
+  border: none;
+  color: #000000;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.no:hover {
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+}

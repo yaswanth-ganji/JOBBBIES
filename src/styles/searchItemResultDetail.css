@@ -44,6 +44,10 @@
   width: 60%;
   color: #cbd5e1;
   font-family: roboto;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 8;
+  overflow: hidden;
 }
 .LifeAtCompanyDiv1 img {
   width: 300px;
@@ -77,8 +81,8 @@
   border-radius: 20px;
   color: #ffffff;
   font-family: roboto;
-  width: 28%;
-  height: 350px;
+  width: 30%;
+  height: 450px;
 }
 
 .AllSimilarJobItems:hover {
@@ -87,7 +91,7 @@
 .similarJobResultsDiv {
   width: 90%;
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -101,6 +105,10 @@
   color: #cbd5e1;
   font-family: roboto;
   font-size: 14px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 8;
+  overflow: hidden;
 }
 .loacationDiv {
   display: flex;
