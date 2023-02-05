@@ -1,7 +1,7 @@
 .homeDiv {
   /* height: 150%; */
 
-  width: 100vw;
+  width: 100%;
   background-image: url("https://assets.ccbp.in/frontend/react-js/home-lg-bg.png");
   background-size: cover;
   background-repeat: no-repeat;

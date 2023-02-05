@@ -56,8 +56,8 @@ class Login extends React.Component {
           <div className="loginDiv">
             <img
               src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
-              width={100}
-              height={35}
+              width={150}
+              height={55}
               alt="appLogo"
             />
 
