@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/notfound.css";
+import "./notfound.css";
 import Cookie from "js-cookie";
 import { Redirect } from "react-router-dom";
 class NotFound extends React.Component {
