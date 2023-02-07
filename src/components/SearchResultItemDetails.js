@@ -140,6 +140,7 @@ class SearchResultItemDetail extends React.Component {
           </div>
         </div>
       );
+      //testing
     } else if (this.state.ApiStatus == "FAIL") {
       data = (
         <div className="searchItemDetailFail">
