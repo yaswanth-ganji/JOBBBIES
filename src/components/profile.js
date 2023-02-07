@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Job.css";
+import "../styles/job.css";
 import Cookie from "js-cookie";
 import Loader from "react-loader-spinner";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";

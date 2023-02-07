@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Job.css";
+import "../styles/job.css";
 
 import Searchresultitem from "./Searchresultitem";
 import Loader from "react-loader-spinner";

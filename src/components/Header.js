@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
-import "../styles/Header.css";
+import "../styles/header.css";
 import Cookie from "js-cookie";
 import LogoutModel from "./LogoutModel";
 class Header extends React.Component {
