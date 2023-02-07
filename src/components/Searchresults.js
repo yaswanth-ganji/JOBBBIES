@@ -83,7 +83,7 @@ class SearchResults extends React.Component {
       data = (
         <div className="NetworkIssueDiv">
           <img
-            src="https://assets.ccbp.in/frontend/react-js/failure-img.png"
+            src={"https://assets.ccbp.in/frontend/react-js/failure-img.png"}
             width={500}
             height={350}
           ></img>

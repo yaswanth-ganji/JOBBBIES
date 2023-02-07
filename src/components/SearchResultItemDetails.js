@@ -145,7 +145,9 @@ class SearchResultItemDetail extends React.Component {
     } else if (this.state.ApiStatus == "FAIL") {
       data = (
         <div className="searchItemDetailFail">
-          <img src="https://assets.ccbp.in/frontend/react-js/failure-img.png" />
+          <img
+            src={"https://assets.ccbp.in/frontend/react-js/failure-img.png"}
+          />
           <p className="IssueP1">Oops! Something Went Wrong</p>
           <p className="IssueP2">
             we cannot seem to find the page you are looking for.

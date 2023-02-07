@@ -6,8 +6,6 @@ import LogoutModel from "./LogoutModel";
 class Header extends React.Component {
   state = {
     open: false,
-    // focusHome: true,
-    // focusJob: false,
   };
   logOut = () => {
     this.setState({ open: true });
