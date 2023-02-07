@@ -1,28 +1,24 @@
 import React from "react";
 import "../styles/Job.css";
-import { useEffect } from "react";
+
 import Searchresultitem from "./Searchresultitem";
 import Loader from "react-loader-spinner";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 class SearchResults extends React.Component {
   state = {
     searchData: "",
-    // LocationDetails: "",
+
     x: false,
   };
 
   onFormSubmit = (e) => {
     e.preventDefault();
-    // let inputData = document.getElementById("inpEle").value;
-    // this.setState({ searchData: inputData });
-
     this.props.SearchBarData(this.state.searchData);
     this.props.getDynamicData();
   };
 
   loactionChange = (e) => {
     if (e.target.value === "Select Location") {
-      // this.setState({ LocationDetails: "" });
       this.props.LocationInfo("");
     } else {
       this.props.LocationInfo(e.target.value);
@@ -35,11 +31,11 @@ class SearchResults extends React.Component {
   componentDidMount() {
     this.props.getDynamicData();
   }
+  NetworkIssue = () => {
+    this.props.getDynamicData();
+  };
   render() {
     const AllfilterResults = this.props.searchResultData;
-    // .filter((eachItem) => {
-    //   return eachItem.location.includes(this.state.LocationDetails);
-    // });
 
     if (AllfilterResults.length >= 1) {
       var Allresults = AllfilterResults.map((eachItem) => {
@@ -67,7 +63,39 @@ class SearchResults extends React.Component {
         </div>
       );
     }
-    const { x } = this.state;
+    // const { x } = this.state;
+    let data;
+    if (this.props.Loader == true && this.props.ApiStatus == false) {
+      data = (
+        <div className="Loader2">
+          <Loader
+            className="loader"
+            type="ThreeDots"
+            color="#ffffff"
+            height={30}
+            width={40}
+          />
+        </div>
+      );
+    } else if (this.props.Loader == false && this.props.ApiStatus == false) {
+      data = <div className="AllResults">{Allresults}</div>;
+    } else if (this.props.Loader == false && this.props.ApiStatus == true) {
+      data = (
+        <div className="NetworkIssueDiv">
+          <img
+            src="https://assets.ccbp.in/frontend/react-js/failure-img.png"
+            width={500}
+            height={350}
+          ></img>
+
+          <p className="IssueP1">Oops! Something Went Wrong</p>
+          <p className="IssueP2">
+            we cannot seem to find the page you are looking for.
+          </p>
+          <button onClick={this.NetworkIssue}>Retry</button>
+        </div>
+      );
+    }
     return (
       <>
         <div className="jobResultSearch">
@@ -96,8 +124,9 @@ class SearchResults extends React.Component {
             <option>Kerala</option>
           </select>
         </div>
+        <div className="resultsMainDiv"> {data}</div>
 
-        {this.props.Loader ? (
+        {/* {this.props.Loader ? (
           <div className="Loader2">
             <Loader
               className="loader"
@@ -105,12 +134,11 @@ class SearchResults extends React.Component {
               color="#ffffff"
               height={30}
               width={40}
-              // timeout={3000} //3 secs
             />
           </div>
         ) : (
           <div className="AllResults">{Allresults}</div>
-        )}
+        )} */}
       </>
     );
   }

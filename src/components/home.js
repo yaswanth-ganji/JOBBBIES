@@ -3,6 +3,13 @@ import Header from "./Header";
 import "../styles/Home.css";
 import Cookie from "js-cookie";
 import { Redirect } from "react-router-dom";
+import facebook from "../icons/fb.svg";
+import twitter from "../icons/twitter.svg";
+import instagram from "../icons/insta.svg";
+import whatsapp from "../icons/whatsapp.svg";
+import linkdin from "../icons/linkdin.svg";
+import Job from "../icons/Job.svg";
+// import productHunt from "../icons/productHunt.svg";
 class Home extends React.Component {
   state = {
     covidADD: true,
@@ -95,6 +102,23 @@ class Home extends React.Component {
             <button onClick={this.CookieRemove}>I Agree</button>
           </div>
         )}
+        <div className="Footer">
+          <div className="footerHeader">
+            <img src={Job} width={50} height={70} />
+            <p>Jobbies</p>
+          </div>
+
+          <span>The only thing we are serious about is JOB</span>
+          <span>Contact us on</span>
+          <div className="footerLogoDiv">
+            <img src={linkdin} width={40} height={40} />
+            <img src={whatsapp} width={40} height={40} />
+            <img src={instagram} width={40} height={40} />
+            <img src={twitter} width={40} height={40} />
+            <img src={facebook} width={40} height={40} />
+            {/* <img src={productHunt} width={40} height={40} /> */}
+          </div>
+        </div>
       </div>
     );
   }

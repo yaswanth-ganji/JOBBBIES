@@ -161,3 +161,24 @@
   justify-content: space-around;
   height: 100%;
 }
+
+.searchItemDetailFail {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.searchItemDetailFail button {
+  background-color: #4f46e5;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100px;
+}
+
+.searchItemDetailFail button:hover {
+  background-color: #6366f1;
+}

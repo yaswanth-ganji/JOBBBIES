@@ -6,6 +6,8 @@ import LogoutModel from "./LogoutModel";
 class Header extends React.Component {
   state = {
     open: false,
+    // focusHome: true,
+    // focusJob: false,
   };
   logOut = () => {
     this.setState({ open: true });
@@ -20,6 +22,13 @@ class Header extends React.Component {
     const { history } = this.props;
     history.push("/");
   };
+
+  HomeClick = () => {
+    this.setState({ focusHome: true, focusJob: false });
+  };
+  JobClick = () => {
+    this.setState({ focusHome: false, focusJob: true });
+  };
   render() {
     return (
       <>
@@ -33,10 +42,19 @@ class Header extends React.Component {
             alt="appLogo"
           />
           <div className="spanDiv">
-            <Link to="/">
+            <Link
+              to="/"
+              className={this.state.focusHome && "addHighlight"}
+              onClick={this.HomeClick}
+            >
               <span>Home</span>
             </Link>
-            <Link to="/Jobs">
+
+            <Link
+              to="/Jobs"
+              className={this.state.focusJob && "addHighlight"}
+              onClick={this.JobClick}
+            >
               <span>Jobs</span>
             </Link>
           </div>

@@ -12,11 +12,10 @@
 }
 
 .homeContent {
-  padding: 30px;
+  padding: 70px;
   width: 50%;
   font-family: roboto;
   color: #ffffff;
-  height: 100vh;
 }
 .homeContent .p1 {
   font-weight: bold;
@@ -69,9 +68,8 @@ button:hover {
 .cookies {
   width: 100vw;
   height: 100px;
-  background: #ffffff;
-  color: #000000;
-  opacity: 0.5;
+  background: rgba(254, 254, 254, 0.4);
+  color: #ffffff;
   position: fixed;
   bottom: 0vh;
   display: flex;
@@ -115,4 +113,40 @@ button:hover {
   font-weight: bold;
   font-size: 26px;
   max-width: 1000px;
+}
+
+.Footer {
+  background-color: #cbd5e1;
+
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: roboto;
+}
+.Footer span {
+  color: #000000;
+}
+.Footer p {
+  color: #000000;
+  font-size: 40px;
+}
+
+.footerLogoDiv {
+  margin: 20px;
+}
+.footerLogoDiv img {
+  margin: 10px;
+}
+
+.footerHeader {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 270px;
+}
+
+.footerHeader p {
+  margin-left: 20px;
 }

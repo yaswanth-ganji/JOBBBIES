@@ -35,3 +35,7 @@
 .appLogo {
   cursor: pointer;
 }
+
+.addHighlight {
+  border: 1px solid #ffffff;
+}
