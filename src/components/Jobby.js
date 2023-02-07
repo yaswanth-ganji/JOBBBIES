@@ -3,7 +3,7 @@ import Login from "./login";
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import Home from "./home";
 import Job from "./Job";
-import SearchResultItemDetail from "./SearchResultItemDetails";
+import SearchResultItemDetail from "./searchresultitemdetail";
 import NotFound from "./NotFound";
 class Jobby extends React.Component {
   render() {
