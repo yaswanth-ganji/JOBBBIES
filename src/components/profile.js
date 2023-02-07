@@ -35,7 +35,6 @@ class Profile extends React.Component {
         this.setState({
           profileDetails: jsonBody.profile_details,
           apiStatus: "SUCCESS",
-          // loader: false,
         });
       })
       .catch(() => {
@@ -90,7 +89,6 @@ class Profile extends React.Component {
   };
 
   render() {
-    // this.failDivShow();
     switch (this.state.apiStatus) {
       case "SUCCESS":
         return this.renderSuccessCase();

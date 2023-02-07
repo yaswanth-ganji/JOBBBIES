@@ -46,10 +46,6 @@ class Home extends React.Component {
                 <a href="https://covid19.who.int/">Learn more</a>
               </div>
               <div className="iconDiv">
-                {/* <i
-                  class="glyphicon glyphicon-remove"
-                  onClick={this.covidAddremove}
-                ></i> */}
                 <svg
                   className="iconSvg"
                   height="20"

@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/ResultItem.css";
-import Rating from "../styles/Rating.png";
+import Rating from "../styles/rating.png";
 import Location from "../styles/location.png";
 import Employment from "../styles/employment.png";
 import { Link } from "react-router-dom";

@@ -50,8 +50,6 @@ class SearchResultItemDetail extends React.Component {
       });
   };
   render() {
-    console.log(this.state.ApiStatus);
-
     const jwtToken = Cookie.get("JobbyjwtToken");
     if (jwtToken === undefined) {
       return <Redirect to="/login" />;

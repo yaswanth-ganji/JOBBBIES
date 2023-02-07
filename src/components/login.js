@@ -34,7 +34,6 @@ class Login extends React.Component {
 
     const res = await fetch("https://apis.ccbp.in/login", options);
     const jsonBody = await res.json();
-    console.log(jsonBody);
 
     if (res.ok === true) {
       Cookie.set("JobbyjwtToken", jsonBody.jwt_token, { expires: 30 });

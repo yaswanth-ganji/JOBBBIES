@@ -1,5 +1,5 @@
 import React from "react";
-import Rating from "../styles/Rating.png";
+import Rating from "../styles/rating.png";
 import Location from "../styles/location.png";
 import Employment from "../styles/employment.png";
 // import { Link } from "react-router-dom";
@@ -36,7 +36,7 @@ class SimilarjobItem extends React.Component {
               <div className="titleDiv">
                 <strong>{title}</strong>
                 <div className="RatingDiv">
-                  <img src={Rating} width={25} height={25} alt="rating" />
+                  <img src={Rating} width={25} height={25} alt="" />
                   <strong>{rating}</strong>
                 </div>
               </div>

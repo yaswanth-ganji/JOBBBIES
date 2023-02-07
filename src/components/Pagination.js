@@ -36,8 +36,6 @@ const Pagination = ({ searchResultData, pageHandler }) => {
     );
   });
 
-  console.log(CurrentPage);
-
   return (
     <>
       <center>

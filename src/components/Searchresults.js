@@ -7,8 +7,6 @@ import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 class SearchResults extends React.Component {
   state = {
     searchData: "",
-
-    x: false,
   };
 
   onFormSubmit = (e) => {
@@ -63,7 +61,7 @@ class SearchResults extends React.Component {
         </div>
       );
     }
-    // const { x } = this.state;
+
     let data;
     if (this.props.Loader == true && this.props.ApiStatus == false) {
       data = (
@@ -125,20 +123,6 @@ class SearchResults extends React.Component {
           </select>
         </div>
         <div className="resultsMainDiv"> {data}</div>
-
-        {/* {this.props.Loader ? (
-          <div className="Loader2">
-            <Loader
-              className="loader"
-              type="ThreeDots"
-              color="#ffffff"
-              height={30}
-              width={40}
-            />
-          </div>
-        ) : (
-          <div className="AllResults">{Allresults}</div>
-        )} */}
       </>
     );
   }
