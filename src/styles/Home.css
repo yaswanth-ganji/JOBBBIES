@@ -40,7 +40,8 @@ button:hover {
   color: #ffffff;
   padding: 20px;
   padding-left: 40px;
-  background: #007cb6;
+  /* background: #007cb6; */
+  background: #64748b;
   font-family: roboto;
   display: flex;
   justify-content: space-between;
@@ -86,7 +87,7 @@ button:hover {
   border: 2px solid #000000;
 }
 .usagePer {
-  background-color: #000000;
+  background-color: #202020;
   height: 350px;
   display: flex;
   flex-direction: column;
@@ -147,4 +148,56 @@ button:hover {
 
 .footerHeader p {
   margin-left: 20px;
+}
+
+.findSolutionsDiv {
+  background-color: #f1f5f9;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: roboto;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+.findSol1,
+.findSol2,
+.findSol3 {
+  width: 27%;
+  margin: 30px;
+}
+.findSolBtn {
+  padding: 12px;
+  font-size: 17px;
+  padding-right: 25;
+  padding-left: 25;
+  color: #ffffff;
+  background-color: #272727;
+  border: none;
+  width: 180px;
+}
+.findSolBtn:hover {
+  background-color: #000000;
+}
+.findSolutionsDiv h2,
+.FindSolutionMainDiv h2 {
+  font-size: x-large;
+  font-weight: bold;
+}
+.findSolutionsDiv h3 {
+  font-size: large;
+  font-weight: bold;
+  border-top: 4px solid #272727;
+  padding-top: 20px;
+}
+.FindSolutionMainDiv {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f4f4f5;
+  font-family: roboto;
+  padding-bottom: 50;
+  padding: 30px;
+}
+.FindSolutionMainDiv1 {
+  width: 20%;
 }

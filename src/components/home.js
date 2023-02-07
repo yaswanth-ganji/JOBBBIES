@@ -9,6 +9,7 @@ import instagram from "../icons/insta.svg";
 import whatsapp from "../icons/whatsapp.svg";
 import linkdin from "../icons/linkdin.svg";
 import Job from "../icons/Job.svg";
+import findSolutions from "../styles/findSolutions.jpg";
 // import productHunt from "../icons/productHunt.svg";
 class Home extends React.Component {
   state = {
@@ -79,6 +80,41 @@ class Home extends React.Component {
             <button onClick={this.findJob}>Find Jobs</button>
           </div>
         </div>
+
+        <div className="findSolutionsDiv">
+          <div className="findSol1">
+            <h2>Jobbies that can help you reach your goals</h2>
+            <p>
+              With Jobbies, you will discover a smarter way to buy—giving you
+              more time to focus on moving your organization forward.
+            </p>
+            <button className="findSolBtn">Work with us</button>
+          </div>
+          <div className="findSol2">
+            <h3>Get Job simpler</h3>
+            <p>
+              Improve selection processes and drive efficiency across your
+              organization.
+            </p>
+            <h3>Work on your terms</h3>
+            <p>
+              Turn purchasing into a value driver for any organization at any
+              stage of growth.
+            </p>
+          </div>
+          <div className="findSol3">
+            <h3>Get more, in one place</h3>
+            <p>
+              Access a wide selection of Jobs and an ever-expanding set of tools
+              and features.
+            </p>
+            <h3>Evolve boldly</h3>
+            <p>
+              Elevate your organization with innovations that transform everyday
+              operations.
+            </p>
+          </div>
+        </div>
         <div className="usagePer">
           <h1>65</h1>
           <p className="p1">of the top Fortune 100 companies</p>
@@ -87,6 +123,20 @@ class Home extends React.Component {
             including the U.S., Canada, United Kingdom, Germany, France, Italy,
             Spain, Japan, and India
           </p>
+        </div>
+
+        <div className="FindSolutionMainDiv">
+          <div className="FindSolutionMainDiv1">
+            <h2>More business tools. Greater value.</h2>
+            <p>
+              Purchasing solutions like advanced analytics and spend management
+              tools that work for you.
+            </p>
+            <button className="findSolBtn"> Find solutions</button>
+          </div>
+          <div>
+            <img width="430" height="430" src={findSolutions} />
+          </div>
         </div>
         {this.state.Cookies && (
           <div className="cookies">
@@ -98,6 +148,7 @@ class Home extends React.Component {
             <button onClick={this.CookieRemove}>I Agree</button>
           </div>
         )}
+
         <div className="Footer">
           <div className="footerHeader">
             <img src={Job} width={50} height={70} />

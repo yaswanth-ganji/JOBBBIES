@@ -52,12 +52,12 @@
 .loginBody button:hover {
   background-color: #6366f1;
 }
-h3 {
+/* h3 {
   border-bottom: 1px solid silver;
   width: 250px;
   text-align: center;
   padding-bottom: 20px;
-}
+} */
 .errMsg {
   color: red;
 
