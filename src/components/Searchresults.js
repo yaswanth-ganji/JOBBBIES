@@ -82,10 +82,10 @@ class SearchResults extends React.Component {
         <div className="NetworkIssueDiv">
           <img
             src={"https://assets.ccbp.in/frontend/react-js/failure-img.png"}
+            alt="notFoundPageImg"
             width={500}
             height={350}
-          ></img>
-
+          />
           <p className="IssueP1">Oops! Something Went Wrong</p>
           <p className="IssueP2">
             we cannot seem to find the page you are looking for.

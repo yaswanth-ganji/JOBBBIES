@@ -145,6 +145,7 @@ class SearchResultItemDetail extends React.Component {
         <div className="searchItemDetailFail">
           <img
             src={"https://assets.ccbp.in/frontend/react-js/failure-img.png"}
+            alt="notFoundPageImg"
           />
           <p className="IssueP1">Oops! Something Went Wrong</p>
           <p className="IssueP2">
