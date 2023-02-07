@@ -4,7 +4,7 @@ import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import Home from "./home";
 import Job from "./Job";
 import SearchResultItemDetail from "./searchresultitemdetail";
-import NotFound from "./NotFound";
+import NotFound from "./notfound";
 class Jobby extends React.Component {
   render() {
     return (

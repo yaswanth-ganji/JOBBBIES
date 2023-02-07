@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
-import "./Pagination.css";
+import "./pagination.css";
 
 const Pagination = ({ searchResultData, pageHandler }) => {
   const [CurrentPage, setCurrentPage] = useState(1);

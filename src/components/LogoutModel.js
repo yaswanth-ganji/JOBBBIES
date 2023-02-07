@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./LogoutModel.css";
+import "./logoutmodel.css";
 const LogoutModal = ({ message, isOpen, onClose, onLogOut }) => {
   if (!isOpen) return null;
   return ReactDOM.createPortal(
