@@ -1,0 +1,93 @@
+.findSolutionsMain {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+}
+.findSolutionsMain2 {
+  background-color: #475569;
+  height: 90%;
+  width: 70%;
+  display: flex;
+}
+.findSolutions {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Roboto;
+  opacity: 1;
+}
+.findSolutions2,
+.findSolutions3 {
+  margin-right: 30px;
+}
+.findSolutions1 {
+  display: flex;
+  justify-content: space-evenly;
+
+  width: 80%;
+}
+.findSolutions4 {
+  width: 35%;
+}
+
+.finsolncontent {
+  color: #cbd5e1;
+  text-decoration: none;
+  display: block;
+  font-size: large;
+  margin-bottom: 13px;
+}
+
+.finsolncontentfirst {
+  font-weight: bold;
+  font-size: x-large;
+  color: #6366f1;
+}
+.findSolutions3 {
+  border-right: 1px solid #ffffff;
+  padding-right: 50px;
+}
+.findSolutions4 h2 {
+  font-weight: bold;
+  font-size: large;
+}
+.findSolutions4 a {
+  font-size: large;
+  font-weight: bold;
+  color: #6366f1;
+}
+.findSolutions4 p {
+  color: #cbd5e1;
+}
+.findSolutionBottomDiv {
+  background-color: #28364b;
+  width: 70%;
+  height: 15%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.findSolutionBottomDiv a {
+  margin-right: 40px;
+  font-size: larger;
+  font-weight: bold;
+  color: #4f46e5;
+}
+.cancelImg {
+  margin: 10px;
+}
+.cancelImg:hover {
+  cursor: pointer;
+}
+.finsolncontent:hover {
+  color: #6366f1;
+  text-decoration: underline;
+}
