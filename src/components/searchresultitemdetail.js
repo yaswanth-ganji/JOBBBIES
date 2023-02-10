@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Cookie from "js-cookie";
-import "../styles/searchitemresultdetail.css";
+import "../styles/Searchitemresultdetail.css";
 import Searchresultitem from "./Searchresultitem";
 import SimilarjobItem from "./similarJobItem";
 import { Redirect } from "react-router-dom";

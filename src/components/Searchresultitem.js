@@ -1,10 +1,10 @@
 import React from "react";
-import "../styles/resultitem.css";
+import "../styles/Resultitem.css";
 import Rating from "../styles/rating.png";
 import Location from "../styles/location.png";
 import Employment from "../styles/employment.png";
 import { Link } from "react-router-dom";
-import "../styles/searchitemresultdetail.css";
+import "../styles/Searchitemresultdetail.css";
 class Searchresultitem extends React.Component {
   render() {
     const { searchResultData, renderLink } = this.props;

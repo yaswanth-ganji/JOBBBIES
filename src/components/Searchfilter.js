@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/job.css";
+import "../styles/Job.css";
 import Profile from "./profile";
 
 class Searchfilter extends React.Component {

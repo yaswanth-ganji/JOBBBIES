@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import "../styles/job.css";
+import "../styles/Job.css";
 import Searchfilter from "./Searchfilter";
 import Searchresults from "./Searchresults";
 import Cookie from "js-cookie";
